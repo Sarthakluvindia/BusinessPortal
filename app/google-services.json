@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1070515162174",
+    "firebase_url": "https://businessportal-1532179037501.firebaseio.com",
+    "project_id": "businessportal-1532179037501",
+    "storage_bucket": "businessportal-1532179037501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070515162174:android:cab361d0da7c82f1",
+        "android_client_info": {
+          "package_name": "com.developer.sarthak.businessportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070515162174-i64hlhun0q1a52lnma03dguaee8q70oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.sarthak.businessportal",
+            "certificate_hash": "c6c5f1fe87b265efdd0423ec901789a2d98acf27"
+          }
+        },
+        {
+          "client_id": "1070515162174-ch1tdkgf95lohnmr58j8covb1bcu7r6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTtRDXW27D0oLLCCNnggHz3yJIgTQOW6s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070515162174-ch1tdkgf95lohnmr58j8covb1bcu7r6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

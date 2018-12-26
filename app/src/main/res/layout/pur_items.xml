@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/pur_prono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Number"
+        android:drawableLeft="@drawable/prono"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/pur_proname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:drawableLeft="@drawable/product"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/pur_proqty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Quantity"
+        android:drawableLeft="@drawable/proqty"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/pur_proprc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:drawableLeft="@drawable/price"
+        android:drawablePadding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="Total Amount:"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/pur_amt"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:background="@drawable/resourcesedit"
+            android:focusable="false"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

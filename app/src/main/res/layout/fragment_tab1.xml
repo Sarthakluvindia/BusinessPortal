@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.developer.sarthak.businessportal.Tab1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <co.ceryle.segmentedbutton.SegmentedButtonGroup
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    app:sbg_animateSelector="accelerate"
+                    app:sbg_animateSelectorDuration="500"
+                    app:sbg_backgroundColor="@android:color/white"
+                    app:sbg_dividerColor="@android:color/black"
+                    android:dividerPadding="10dp"
+                    app:sbg_dividerSize="1dp"
+                    app:sbg_position="0"
+                    app:sbg_selectorColor="@color/blue"
+                    app:sbg_selectorTextColor="@android:color/white"
+                    app:sbg_shadow="true"
+                    app:sbg_shadowElevation="3dp"
+                    app:sbg_shadowMargin="4dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Days"
+                        android:id="@+id/days"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Months"
+                        android:id="@+id/months"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Years"
+                        android:id="@+id/years"/>
+
+                </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/graph" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Total Purchase:"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/purchased_amt"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/resourcesedit"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Total Sales:"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/sales_amt"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/resourcesedit"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Total Payment:"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/paid_amt"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/resourcesedit"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Total Expenses:"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/expenses_amt"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/resourcesedit"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Total Profit:"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical" />
+
+                    <EditText
+                        android:id="@+id/pro_amt"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/resourcesedit"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

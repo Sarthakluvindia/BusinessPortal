@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="In-App Applications">
+        <menu>
+            <item
+                android:id="@+id/nav_pur"
+                android:icon="@drawable/baseline_add_shopping_cart_white_36"
+                android:title="Purchase" />
+            <item
+                android:id="@+id/nav_sal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:icon="@drawable/baseline_trending_up_white_36"
+                android:title="Sales" />
+            <item
+                android:id="@+id/nav_pay"
+                android:icon="@drawable/baseline_payment_white_18dp"
+                android:title="Payment" />
+            <item
+                android:id="@+id/nav_exp"
+                android:icon="@drawable/baseline_attach_money_white_36"
+                android:title="Expenses" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/baseline_file_copy_white_36"
+                android:title="Report" />
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+
+            <item
+                android:id="@+id/sign_out"
+                android:icon="@drawable/ic_remove_circle_outline_black_24dp"
+                android:title="Sign Out" />
+            <item
+                android:id="@+id/delete"
+                android:icon="@drawable/ic_delete_black_24dp"
+                android:title="Delete Account"/>
+        </menu>
+    </item>
+
+</menu>

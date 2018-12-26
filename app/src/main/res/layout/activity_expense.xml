@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:weightSum="10"
+    tools:context="com.developer.sarthak.businessportal.ExpenseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resourcesedit"
+                android:text="Expenses"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/exp_com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/company_icon"
+                android:drawablePadding="10dp"
+                android:textColor="@android:color/black"
+                android:hint="Comapny Name"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="match_parent"
+                    android:text="Number of Expenses: "
+                    android:drawableLeft="@drawable/item_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/exp_item"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent">
+                </Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp_llt"
+                android:orientation="vertical"></LinearLayout>
+            <Button
+                android:id="@+id/exp_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Add"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="Total Amount:"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/exp_amt"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:background="@drawable/resourcesedit"
+            android:editable="false"
+            android:focusable="false"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
